@@ -30,7 +30,7 @@ At a minimum, this plugin needs only a LED and RGB. But the followings component
 | -         | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | LED       | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | -         | Dimming                | Potentiometer ``N°1``        | ARDUINO |
-| -         | -                      | Portlet ``(slider)`` & Vocal | SARAH   |
+| -         | Dimming                | Portlet ``(slider)`` & Vocal | SARAH   |
 | RGB       | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | -         | Dimming                | Portlet ``(slider)`` & Vocal | SARAH   |
 | -         | Set rgb values         | Portlet ``(colorpicker)``    | SARAH   |
