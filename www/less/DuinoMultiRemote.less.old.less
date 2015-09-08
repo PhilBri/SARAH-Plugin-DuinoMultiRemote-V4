@@ -1,0 +1,171 @@
+
+@DuinoColor: #00979C;
+@DuinoNoir: #6A5F4D;
+
+#DuinoMultiRemote {
+	min-height: 260px;
+	max-height: 260px;
+	border-radius: 6px;
+	border: 4px solid #EEE;
+	background: @DuinoColor;
+
+	.portlet-header {display: none;}
+
+	.portlet-body { 
+		height: 100%;
+		border-radius: 4px;
+		padding-top: 0;
+	}
+
+	.portlet-footer{
+		/*border: 1px solid red;*/
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		height: 24px;
+		padding: 0;
+		.btn {
+			height: 24px;
+			border-radius: 4px;
+			background: #F5F5F5;
+		}
+	}
+
+	.plugin-name {
+		border: 1px solid #EEE;
+		position: absolute;
+		bottom: 5px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+	.logo-panel {
+		height: 25px;
+		#logo {
+			height: 100%;
+
+		}
+	}
+
+	.panel {
+		margin: 5px 0 0 0;
+
+		.rgbled { height: 25px;
+			.led-color {
+				min-width: 26px;
+				max-width: 26px;
+				border: 2px solid #A8A8A8;
+				background: #C9C9C9;
+				padding-left: 3px;
+			}
+		}
+
+		h6 {
+			margin: 0;
+			font-weight: bold;
+			cursor: default;
+		}
+
+		.panel-rgb {
+			text-align: center;
+			/*padding-top: 0;*/
+			margin-top: 2px;
+			padding-bottom: 5px;
+			padding: 0 0 5px 0;
+			.btn.disabled {
+				color: #FAF0EA;
+				opacity: 1;
+			}
+			.btn {
+				min-width: 25px;
+				max-width: 25px;
+				font-size: 10px;
+				font-weight: bold;
+			}
+
+			.red_val {background: #F00;}
+			.green_val {background: #33CC33;}
+			.blue_val {background: #00F;}
+		}
+
+		.panel-heading, .panel-title {
+			height: 20px;
+			padding-top: 2px;
+			padding-left: 2px;
+			padding-right: 2px;
+			font-weight: bold;
+		}
+
+		.panel-title {
+			background: #F5F5F5;
+			color: #333;
+			height: 18px;
+		}
+
+		[class*="col-"] {
+			padding-left: 0; padding-right: 0;
+			/*border: 1px solid red;*/
+			.disabled {
+				opacity: 1;
+			}
+			.glyphicon {font-size: 8px;}
+
+		}
+		[class*="t_val"], [id*="state"] { /* t-val = {po t_val, sw t_val } */
+			border-radius:18px;
+			border: 1px solid #0099CC;
+			min-width:26px;
+			max-width: 26px;
+			height: 15px;
+			font-size: 10px;
+			font-weight: bold;
+			color: #0099CC;
+			line-height: 100%;
+		}
+		[id*="state"] {
+			/*border: none;
+			color: #FFF;
+			background:#0099CC;*/
+		}
+	}
+	.my-col {
+		background:#F5F5F5;
+		padding-left:2px;
+		padding-right: 2px;
+		height:20px;
+		h6 {
+			padding-top: 2px;
+			color: black;
+			.btn {
+				margin-top: -1px;
+			}
+		}
+	}
+	.my-col2 {
+		background: #F5F5F5;
+		height: 20px;
+		padding: 0;
+		#up_led, #dwn_led {
+			height: 20px;
+			width: 18px;
+			font-size: 10px;
+		}
+		.led_val {
+			height: 20px;
+			min-width: 25px;
+			max-width: 25px;
+			font-size: 10px;
+			font-weight: bold;
+			background: #0099CC;
+			color: #FFF;
+		}
+	}
+	.col-xs-1 {
+		background: @DuinoColor;
+		padding-left: 0px;
+		padding-right: 0px;
+		color: #FFF;
+		font-size: 10px;
+		padding-top: 2px;
+	}
+}
