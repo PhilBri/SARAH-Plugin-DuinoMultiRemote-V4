@@ -24,7 +24,7 @@ At a minimum, this plugin needs only a LED and RGB. But the followings component
 ## All supported ARDUINO components:
 <br/> 
 
-| Component | Function               | Using                        | On      |
+| Component | Actions                | Using                        | On      |
 | :-------: | :--------------------- | :--------------------------- | :-----: |
 | ALL       | ON/OFF                 | Button                       | ARDUINO |
 | -         | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
