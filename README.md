@@ -7,6 +7,7 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 on top of:
 * C# (Kinect) client for Voice, Gesture, Face, QRCode recognition. 
 * NodeJS (ExpressJS) server for Internet of Things communication
+
 ***
 <br/>  
 
@@ -41,9 +42,9 @@ All actions are bidirectional, and are updated in real time in SARAH's portlet a
 
 #### Therefore, to perform an action, you have the following choices :
 
-* #### Vocally   : ``With integrated SARAH's voice command.``
-* #### Manually  : ``Via Arduino's components``
-* #### On Screen : ``Via SARAH portlet's``
+#### Vocally   : ``With integrated SARAH's voice command.``
+#### Manually  : ``Via Arduino's components``
+#### On Screen : ``Via SARAH portlet's``
 
 ***
 <br/>  
