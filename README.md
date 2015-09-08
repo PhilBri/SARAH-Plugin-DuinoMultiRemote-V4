@@ -42,9 +42,9 @@ All actions are bidirectional, and are updated in real time in SARAH's portlet a
 
 #### Therefore, to perform an action, you have the following choices :
 
-#### Vocally   : ``With integrated SARAH's voice command.``
-#### Manually  : ``Via Arduino's components``
-#### On Screen : ``Via SARAH portlet's``
+* Vocally   : ``With integrated SARAH's voice command.``
+* Manually  : ``Via Arduino's components``
+#### * On Screen : ``Via SARAH portlet's``
 
 ***
 <br/>  
