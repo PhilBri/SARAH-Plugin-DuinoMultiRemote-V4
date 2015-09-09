@@ -2,28 +2,29 @@
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<div>
-  <h5 class="panel-heading panel-success text-success " style="padding-left:0">
-    <span class="label label-success" style="font-size:15px;padding-top:5px">Auteur</span> Phil Bri
-  </h5>
+<div class="container">
+  <div class="panel-xs" style="display:table-row">
+		<span class="label label-success">Auteur</span><span class="text-success"> Phil Bri</span>
+  </div>
 
+  <h4>
   <div class="panel panel-default">
     <ul class="nav nav-pills">
       <li class="active">
-        <a href="#desc" role="tab" data-toggle="pill"><h3 class="panel-title"><span class="glyphicon glyphicon-home"></span></h3></a>
+        <a href="#desc" role="tab" data-toggle="pill"><span class="glyphicon glyphicon-home"></span></a>
       </li>
       <li>
-        <a href="#fonction" data-toggle="tab"><h3 class="panel-title">Fonctionnement</h3></a>
+        <a href="#fonction" data-toggle="tab">Fonctionnement</a>
       </li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h3 class="panel-title">Configuration <span class="caret"></span></h3></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Configurations <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#cfg-plugin" data-toggle="tab">Plugin</a></li>
           <li><a href="#cfg-arduino" data-toggle="tab">Arduino</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h3 class="panel-title">Commandes <span class="caret"></span></h3></a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Commandes <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#cmd-vox" data-toggle="tab">Vocales</a></li>
           <li><a href="#cmd-duino" data-toggle="tab">Arduino</a></li>
@@ -33,45 +34,58 @@
         </ul>
       </li>
       <li>
-        <a href="#version" data-toggle="tab"><h3 class="panel-title">Version</h3></a>
+        <a href="#version" data-toggle="tab">Version</a>
       </li>
     </ul>
   </div>
+  </h4>
 
   <div class="tab-content panel">
     <div class="tab-pane active" id="desc">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Description</h3></div>
+        <div class="panel-heading panel-title">Description</div>
         <div class="panel-body">
+         <h4>DuinoMultiRemote</h4>
           <p>
-          <strong class="panel-title">DuinoMultiRemote</strong> est un plugin de démonstration permettant à <strong>S.A.R.A.H</strong> d'interagir avec une carte <strong>Arduino</strong>.<br>
-          Au delà de la commande vocale intégrée, vous pourrez aussi commander l'Arduino des manières suivantes.
+          Est un plugin de démonstration permettant à <strong>S.A.R.A.H</strong> d'interagir avec une carte <strong>Arduino</strong>.<br>
+          Afin d'évaluer les possibilités d'interactions offertes, quelques composants sont cablés sur la <code>breadbord</code> et permettent de "visualiser" les actions.
           </p>
-          <p>Depuis :</p>
+          <p>
+            <strong>Attention:</strong> Il vous faut utiliser impérativement la version V4 de S.A.R.A.H
+          </p>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading panel-title">Les communications sont possibles depuis:</div>
+        <div class="panel-body">
           <ul>
-            <u>Le portlet "interactif":</u>
+            <h5><strong>Le portlet du plugin:</strong></h5>
             <ul>
               - Envoi des commandes directement depuis l'écran.<br>
-              - Retour d'action avec <u>mise à jour en temps réel</u>.
+              - Retour d'action avec mise à jour en <em>temps réel</em>.
             </ul>
-            <u>Les composants de l'Arduino</u>
+            <h5><strong>Les composants de l'Arduino</strong></h5>
             <ul>
               - Switch.<br>
               - Potentiomètre.
             </ul>
-            <u>La commande vocale intégrée.</u>
+            <h5><strong>La commande vocale intégrée.</strong></h5>
           </ul>
-          <p>L'ensemble permettant de commander:</p>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading panel-title">L'ensemble vous permettant de commander:</div>
+        <div class="panel-body">
           <ul>
-            <u>Une led RGB:</u>
+            <h5><strong>Une led RGB:</strong></h5>
             <ul>
-              - On/Off et Color Picker.
+              - On/Off et changement de couleur.
             </ul>
-            <u>Une led Normale:</u>
+            <h5><strong>Une led Normale:</strong></h5>
             <ul>
               - On/Off et variation.
             </ul>
-            <u>Un afficheur LCD:</u>
+            <h5><strong>Un afficheur LCD:</strong></h5>
             <ul>
               - Etat du plugin (Ready/OFF).<br>
               - Valeurs de la LED RGB (RGB(x,x,x).<br>
@@ -79,22 +93,27 @@
               - Etat des LED's (ON/OFF)
             </ul>
           </ul>
-          La plupart des montages à base d'Arduino, sont réalisés dans un but pédagogique. Ce plugin relève de cette même volontée et devrait vous permettre de mesurer les possibilités d'interaction entre l'Arduino et S.A.R.A.H. tout en s'adaptant - facilement - à vos besoins spécifiques d'IOT/Domotique.
         </div>
       </div>
+      <p>
+        La plupart des montages à base d'Arduino, sont réalisés dans un but pédagogique. Ce plugin relève de cette même volontée et devrait vous permettre d'évaluer le potentiel des possibilités des communications "real-time" entre l'Arduino et S.A.R.A.H.
+      </p>
+      <p>
+        Mais il peut aussi s'adapter - facilement - à vos besoins spécifiques d'IOT/Domotique.
+      </p>
     </div>
+
     <div class="tab-pane" id="fonction">
-      <!-- Code -->
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Code</h3></div>
+        <div class="panel-heading panel-title">Code</div>
         <div class="panel-body">
           <strong class="panel-title">DuinoMultiRemote</strong> utilise les librairies <code>NodeJS</code> suivantes :
           <ul class="list-unstyled">
             <li><code>node-serialport</code> - Pour les communications entre le plugin et l'arduino.
-            <a href='https://github.com/voodootikigod/node-serialport' title="serialport - GitHub"><img src="./www/images/octocat.png" height=4%/></a>
+              <a href='https://github.com/voodootikigod/node-serialport' title="serialport - GitHub"><img src="./www/images/octocat.png" height=4%/></a>
             </li>
             <li><code>socket.IO</code> - Pour la liaison "real-time" entre le plugin et son portlet.
-            <a href='http://socket.io/' title="Socket.IO"><img src="./www/images/socketio-logo.jpg" height=6%/></a>
+              <a href='http://socket.io/' title="Socket.IO"><img src="./www/images/socketio-logo.jpg" height=6%/></a>
             </li>
           </ul>
           Mais aussi :
@@ -107,9 +126,9 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Principe</h3></div>
+        <div class="panel-heading panel-title">Principe</div>
         <div class="panel-body">
-          <h3 class="panel-title"><u>Chronologie :</u></h3>
+          <h5><strong>Chronologie :</strong></h5>
           <p>
           <ul>
             <strong class="panel-title">1</strong> - Les requètes sont envoyées vers l'Arduino via la librairie <code>serialPort</code> depuis le port <code>COM</code> de l'ordinateur.
@@ -119,13 +138,13 @@
             <strong class="panel-title">3</strong> - La librairie <code>socket.IO</code> permet de mettre à jour immédiatement le portlet afin de refleter le résultat de la requète.
           </ul>
           </p>
-          <h3 class="panel-title"><u>Schéma fonctionnel (principe):</u></h3>
+          <h5><strong>Schéma fonctionnel (principe):</strong></h5>
           <p>
           <h3 class="panel-title text-center">
             Arduino <span class="glyphicon glyphicon-transfer"></span><strong><code>SerialPort</code></strong><span class="glyphicon glyphicon-transfer"></span> Plugin <span class="glyphicon glyphicon-transfer"></span><strong><code>Socket.IO</code></strong><span class="glyphicon glyphicon-transfer"></span> Portlet
           </h3>
           </p>
-          <h3 class="panel-title"><u>Avantages:</u></h3>
+          <h5><strong>Avantages:</strong></h5>
           <p>
           <ul>
             <code>socketIo</code> évite de rafraîchir le navigateur, ou de mettre en place un <code>CRON</code> ou un <code>timer</code> pour mettre à jour le portlet.
@@ -136,7 +155,7 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Fonctions</h3></div>
+        <div class="panel-heading panel-title">Fonctions</div>
         <div class="panel-body">
           <p>
             L'ensemble des interactions entre <strong>MultiDuinoRemote</strong>, les composants de l'<strong>Arduino</strong> et <strong>S.A.R.A.H</strong> est résumé dans le tableau ci-aprés :
@@ -239,7 +258,7 @@
     </div>
     <div class="tab-pane" id="cfg-plugin">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Port COM</h3></div>
+        <div class="panel-heading panel-title">Port COM</div>
         <div class="panel-body">
           <p>
             Pour pouvoir fonctionner, le module a besoin de connaître le port <code>COM{x}</code> de l'Arduino afin de lui envoyer les requêtes demandées via la liaison USB. (Il est à noter que la gestion via des shields "ethernet" est aussi possible...).
@@ -254,7 +273,7 @@
     </div>
     <div class="tab-pane" id="cfg-arduino">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Cablage Arduino</h3></div>
+        <div class="panel-heading panel-title">Cablage Arduino</div>
         <div class="panel-body">
           <p>
             Le programme de l'Arduino gére les composants ci-dessous qui peuvent lui être connectés. Toutefois, vous pouvez vous contenter de ne cabler que ceux qui vous intérressent...
@@ -356,7 +375,7 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Programmation Arduino</h3></div>
+        <div class="panel-heading panel-title">Programmation Arduino</div>
         <div class="panel-body">
           <p>
             Pour pouvoir fonctionner correctement avec <strong>DuinoMultiRemote</strong>, l'Arduino à besoin du programme adapté ou <code>sketch</code>.
@@ -372,7 +391,7 @@
     </div>
     <div class="tab-pane" id="cmd-vox">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Grammaire</h3></div>
+        <div class="panel-heading panel-title">Grammaire</div>
         <div class="panel-body">
           <p>
             L'ensemble de la grammaire utilisée par le module est stockée dans le fichier <code>DuinoRemote.xml</code>
@@ -383,9 +402,9 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Commandes vocales</h3></div>
+        <div class="panel-heading panel-title">Commandes vocales</div>
         <div class="panel-body">
-          <strong><u>Les commandes sont divisées en 2 catégories :</u></strong>
+          <h5><strong>Les commandes sont divisées en 2 catégories :</strong></h5>
           <ul>
             <li>Commandes d'action.</li>
             <li>Commandes de retour d'état.</li>
@@ -395,14 +414,14 @@
           Il est à noter que si une commande ne peut aboutir, le plugin vous avertira :
           </p>
           <p>
-            <u>Exemple:</u> <code>Sarah allume la Led</code> alors que la LED déjà allumée... <strong>S.A.R.A.H</strong> vous répondra : <code>La LED est déjà allumée.</code>
+            <u>Exemple:</u> <code>Sarah allume la Led</code> alors que la LED est déjà allumée... <strong>S.A.R.A.H</strong> vous répondra : <code>La LED est déjà allumée.</code>
           </p>
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Exemples de commandes vocales</h3></div>
+        <div class="panel-heading panel-title">Exemples de commandes vocales</div>
         <div class="panel-body">
-          <strong><u>Commandes d'action :</u></strong> (Exemples)
+          <h5><strong>Commandes d'action :</strong></h5> (Exemples)
           <p><pre><em>SARAH allume la LED</em></pre></p>
           <ul>
             <li>Envoi <code>"L{ledValue},1\n"</code> sur le port COM</li>
@@ -423,7 +442,7 @@
             <li>Envoi <code>"R{red-val},{green-val},{blue-val},1\n"</code> sur le port COM</li>
             <li>Retour vocal: <code>La RGB est allumée</code></li>
           </ul>
-          <strong><u>Commande de retour d'état:</u></strong> (Exemple)
+          <h5><strong>Commande de retour d'état:</strong></h5> (Exemple)
           <p><pre><em>SARAH quel est l'état de la LED</em></pre></p>
           <ul>
             <li>Envoi <code>"?\n"</code> sur le port COM</li>
@@ -432,7 +451,7 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Liste des commandes vocales</h3></div>
+        <div class="panel-heading panel-title">Liste des commandes vocales</div>
         <div class="panel-body">
           <pre class="text-center">SARAH</pre><p class="text-center">puis :</p>
           <p><pre><em>Quel est l'état de la led ?</em></pre></p>
@@ -458,18 +477,18 @@
     </div>
     <div class="tab-pane" id="cmd-duino">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Commandes Arduino</h3></div>
+        <div class="panel-heading panel-title">Commandes Arduino</div>
         <div class="panel-body">
           <p>
             Il est possible de commander les LED's via les 2 composants "actifs" cablés sur la <code>breadboard</code>.
           </p>
-          <strong><u>1 - Le potentiomètre :</u></strong>
+          <h5><strong>1 - Le potentiomètre :</strong></h5>
             <ul>
               <li>Est relié via le <code>sketch</code> Arduino à la LED.</li>
               <li>Une rotation permet de faire varier l'intensité lumineuse de la LED.</li>
               <li>La valeur analogique du potentiomètre est mise à jour dans le portlet.</li>
             </ul>
-          <strong><u>2 - Le bouton poussoir :</u></strong>
+          <h5><strong>2 - Le bouton poussoir :</strong></h5>
           <ul>
             <li>Est relié via le <code>sketch</code> Arduino à la LED <strong>et</strong> à la RGB.</li>
             <li>Un appui bref permet d'éteindre/ allumer la LED <strong>et</strong> la RGB.</li>
@@ -481,20 +500,20 @@
         </div>
       </div>
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Bypass des commandes</h3></div>
+        <div class="panel-heading panel-title">Bypass des commandes</div>
         <div class="panel-body">
         </div>
       </div>
     </div>
     <div class="tab-pane" id="cmd-portlet">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Commandes "Portlet"</h3></div>
+        <div class="panel-heading panel-title">Commandes "Portlet"</div>
         <div class="panel-body">
           <p>
             Le portlet étant relié à l'Arduino en mode bidirectionnel (via le plugin), il est tout à fait possible d'utiliser votre écran pour envoyer vos commandes et pour en visualiser les retour. La mise à jour du portlet étant quasi instantanée...
           </p>
-          <h4>
-          <u>Vous pouvez donc clicker sur :</u>
+          <h5>
+          <strong>Vous pouvez donc clicker sur :
           <br/>
           <br/>
           <ul>
@@ -502,7 +521,8 @@
               Les boutons actifs : <span class="badge progress-bar-info">ON</span>&nbsp; pour en changer l'état &nbsp; <span class="badge">OFF</span>
             </li>
             <br>
-            <li>Les sliders :
+            <li>
+              Les sliders :
               <div class="btn-group" role="group">
                 <button type="button" class="btn btn-default btn-xs" style="height:25px">
                   <span class="glyphicon glyphicon-minus"></span>
@@ -514,14 +534,15 @@
               </div>&nbsp; Pour en faire varier la valeur.
             </li>
           </ul>
-          </h4>
+          </strong>
+          </h5>
           Les requètes correspondantes sont alors immédiatement envoyées à l'Arduino et le portlet se met immédiatement à jour... Toutefois, les commandes du portlet n'étant pas des commandes vocales, aucun retour ne sera vocalisé par S.A.R.A.H., seul le portlet affichera le résultat de l'action demandée.
         </div>
       </div>
     </div>
     <div class="tab-pane" id="cmd-error">
       <div class="panel panel-danger">
-        <div class="panel-heading"><h3 class="panel-title">Erreurs</h3></div>
+        <div class="panel-heading panel-title">Erreurs</div>
         <div class="panel-body">
           Les erreurs générées par le programme peuvent notament, avoir les origines suivantes:
           <ul>
@@ -538,9 +559,9 @@
     </div>
     <div class="tab-pane" id="version">
       <div class="panel panel-info">
-        <div class="panel-heading"><h3 class="panel-title">Version 0.1 - (SARAH V4.x)</h3></div>
+        <div class="panel-heading panel-title">Version 0.1 - (SARAH V4.x)</div>
         <div class="panel-body">
-          <u>Composants Arduino pris en charge:</u>
+          <h5><strong><u>Composants Arduino pris en charge:</u></h5></strong>
           <ul>
             [X] RGB LED.<br>
             [X] LED.<br>
@@ -548,7 +569,7 @@
             [X] Potentiomètres (x2).<br>
             [X] LCD Panel<br>
           </ul>
-          <u>Fonctions prises en charge:</u>
+          <h5><strong><u>Fonctions prises en charge:</u></strong></h5>
           <ul>
             [X] GENERAL ON/OFF.<br>
             [X] LED ON/OFF.<br>
@@ -556,9 +577,9 @@
             [X] RGB color changing.<br>
             [X] RGB ON/OFF<br>
           </ul>
-          <u>In development:</u>
+          <h5><strong><u>In development:</u></strong></h5>
           <ul>
-            [-] RGB localStorage.<br>
+            [_] RGB localStorage.<br>
           </ul>
         </div>
       </div>
