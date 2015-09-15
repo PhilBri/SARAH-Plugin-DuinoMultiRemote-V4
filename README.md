@@ -41,9 +41,9 @@ All actions are bidirectional, and are updated in real time in SARAH's portlet a
 
 #### Therefore, to perform an action, you have the following choices :
 
-* #### Vocally   : ``With integrated SARAH's voice command.``
-* #### Manually  : ``Via Arduino's components``
-* #### On Screen : ``Via SARAH portlet's``
+* Vocally   : ``With integrated SARAH's voice command.``
+* Manually  : ``Via Arduino's components``
+* On Screen : ``Via SARAH portlet's``
 
 ***
 <br/>  
@@ -57,10 +57,12 @@ This doc includes manuals, schemas and tips for the plugin, but you will also fi
 * Fritzing file ``.fzz`` (Breadboard layouts).
 * Sketch file ``.ino`` (Arduino C++ prog.).
 
+***
+<br/>
+
+###Read it !
+
 The inline plugin documentation is also available in HTML format: ``index.html``
 
 Therefore, you have the opportunity to learn about all the functions, possibilities and capabilities of this module.
-
-### Read it !
-***
    
