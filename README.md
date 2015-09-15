@@ -7,7 +7,6 @@ This plugin is an add-on for the framework [S.A.R.A.H.](http://encausse.net/s-a-
 on top of:
 * C# (Kinect) client for Voice, Gesture, Face, QRCode recognition. 
 * NodeJS (ExpressJS) server for Internet of Things communication
-
 ***
 <br/>  
 
@@ -24,13 +23,13 @@ At a minimum, this plugin needs only a LED and RGB. But the followings component
 ## All supported ARDUINO components:
 <br/> 
 
-| Component | Actions                | Using                        | On      |
+| Component | Function               | With                         | On      |
 | :-------: | :--------------------- | :--------------------------- | :-----: |
 | ALL       | ON/OFF                 | Button                       | ARDUINO |
 | -         | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | LED       | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | -         | Dimming                | Potentiometer ``N°1``        | ARDUINO |
-| -         | Dimming                | Portlet ``(slider)`` & Vocal | SARAH   |
+| -         | -                      | Portlet ``(slider)`` & Vocal | SARAH   |
 | RGB       | ON/OFF                 | Portlet ``(button)`` & Vocal | SARAH   |
 | -         | Dimming                | Portlet ``(slider)`` & Vocal | SARAH   |
 | -         | Set rgb values         | Portlet ``(colorpicker)``    | SARAH   |
@@ -42,9 +41,9 @@ All actions are bidirectional, and are updated in real time in SARAH's portlet a
 
 #### Therefore, to perform an action, you have the following choices :
 
-* __Vocally__   : ``With integrated SARAH's voice command.``
-* __Manually__  : ``Via Arduino's components``
-* __On Screen__ : ``Via SARAH portlet's``
+* #### Vocally   : ``With integrated SARAH's voice command.``
+* #### Manually  : ``Via Arduino's components``
+* #### On Screen : ``Via SARAH portlet's``
 
 ***
 <br/>  

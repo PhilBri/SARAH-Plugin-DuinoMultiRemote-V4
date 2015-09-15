@@ -1,0 +1,125 @@
+
+@DuinoColor: #00979C;
+@DuinoNoir: #6A5F4D;
+@DuinoBleu: #33A3EC;
+@DuinoBeige: #FAF0EA;
+@headHeight: 15px;
+@footHeight: 26px;
+
+#DuinoMultiRemote {
+	padding: 0px 4px;
+	min-height: 260px;
+	max-height: 260px;
+	border-radius: 6px;
+	border: 2px solid #EEE;
+	background: @DuinoColor;
+	font-weight: bold;
+	cursor: default;
+
+	.portlet-header {
+		height: 15px;
+		background: @DuinoColor;
+		margin: 2px 0 0 0;
+		padding: 0;
+		H3 {display: none;}
+		#logo {
+			display: block;
+			margin: auto;
+			height: 100%;
+			cursor: help;
+		}
+	}
+
+	.portlet-body {
+		height: 260px - @headHeight - @footHeight - 10;
+		padding: 0px;
+		.panel { 
+			margin: 0;
+			padding: 0;
+			[id*="t_val"], [id*="state"] {
+				border-radius:18px;
+				border: 1px solid @DuinoBleu;
+				color: @DuinoBleu;
+				background: white;
+				min-width: 26px;
+				max-width: 26px;
+				font-weight: bold;
+				font-size: 11px;
+			}
+			.btn {
+				padding-right: 0;
+				padding-left: 0;
+			}
+			.disabled { opacity: 1 };
+		}
+		.panel-rgb { margin-top: 2px;
+			.panel-heading { padding: 0px 1px;}
+			.panel-body { text-align: center;
+				.btn-group { margin-top: 2px;
+					.btn {
+						min-width: 25px;
+						max-width: 25px;
+					}
+					.glyphicon { transform: scale(0.9, 0.9); }
+					[id*="val"] {
+						color: white; 
+						font-weight: bold; 
+					}
+					#red_val { 
+						background: #F00; 
+						border: 1px solid #F00; 
+					}
+					#green_val { 
+						background: #3C3; 
+						border: 1px solid #3C3; 
+					}
+					#blue_val { 
+						background: #00F; 
+						border: 1px solid #00F; 
+					}
+				}
+			}
+		}
+		.container-fluid { margin-top: 3px;
+			.row { margin-bottom: 3px; 
+				.btn-group { border: none;
+					.btn { border: none; }
+					.glyphicon { transform: scale(0.6, 0.6); }
+					#led_val {
+						background: @DuinoBleu;
+						color: white;
+						font-size: 0.89em;
+						font-weight: bold;
+					}
+				}
+				.col-xs-1 { padding: 0;
+					.glyphicon {
+						font-size: 9px;
+						color: white;
+					}
+				}
+				.pot { height: 1.6em; }
+				#swt_state {
+					background: @DuinoBleu;
+					color: white;
+				}
+			}
+		}
+	}
+	.portlet-footer::before { content: "DuinoMultiRemote"; }
+	.portlet-footer {
+		padding: 0px 0px 0px 6px;
+		height: 26px;
+		font-size: 16px;
+		color: white;
+		background: #777;
+		border: 1px solid #EEE;
+		border-radius: 4px;
+		.btn {
+			border: none;
+			height: 100%;
+			background: #777;
+			.glyphicon { padding: 0; color: white;}
+		}
+	}
+}

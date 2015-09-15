@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "action_after_build", "action_after_build.vcxproj", "{3E3D56C7-F542-FDA5-53C6-7D734BFCBF77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D023352A-49C9-51D9-37CB-EAF342EB2785} = {D023352A-49C9-51D9-37CB-EAF342EB2785}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "serialport", "serialport.vcxproj", "{D023352A-49C9-51D9-37CB-EAF342EB2785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E3D56C7-F542-FDA5-53C6-7D734BFCBF77}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E3D56C7-F542-FDA5-53C6-7D734BFCBF77}.Debug|Win32.Build.0 = Debug|Win32
+		{3E3D56C7-F542-FDA5-53C6-7D734BFCBF77}.Release|Win32.ActiveCfg = Release|Win32
+		{3E3D56C7-F542-FDA5-53C6-7D734BFCBF77}.Release|Win32.Build.0 = Release|Win32
+		{D023352A-49C9-51D9-37CB-EAF342EB2785}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D023352A-49C9-51D9-37CB-EAF342EB2785}.Debug|Win32.Build.0 = Debug|Win32
+		{D023352A-49C9-51D9-37CB-EAF342EB2785}.Release|Win32.ActiveCfg = Release|Win32
+		{D023352A-49C9-51D9-37CB-EAF342EB2785}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
