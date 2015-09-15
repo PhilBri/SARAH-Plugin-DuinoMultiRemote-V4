@@ -141,13 +141,6 @@ void loop() {
       break;
       //-- Asking for datas --//
       case '?':
-      break;
-
-      //-- Goodbye --//
-      case '*':
-        buttonState = LOW;
-        switching (LOW);
-      break;
       //-- Unknowns requests --//
       default:
       return;
