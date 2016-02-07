@@ -12,7 +12,7 @@ on top of:
 
 ## Description
 
-![](../master/www/images/DuinoMultiRemote.png) DuinoMultiRemote
+![](../master/www/images/portlet.png)
 
 A demo plugin to test the real-time communications between Arduino and SARAH.
 
