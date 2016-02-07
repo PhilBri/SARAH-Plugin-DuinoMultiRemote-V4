@@ -12,6 +12,8 @@ on top of:
 
 ## Description
 
+![](../master/www/images/duinomultiremote.png) DuinoMultiRemote
+
 A demo plugin to test the real-time communications between Arduino and SARAH.
 
 This demo's plugin shows the ARDUINO's possibilities for your own projects with IOT objects, and can be adapted to your needs.
